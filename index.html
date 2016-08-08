@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>HTML5</title>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+  <nav>
+    <div class="menu-item alpha">
+      <h4><a href="#">Igor Kuzmanovic</a></h4>
+            <div class="contact">      
+Phone/Viber/WhatsApp: +381-64-157-7373</br>
+Email:<a href="mailto:kuzma78@yahoo.com?Subject=Hello"target="_top">kuzma78@yahoo.com</a> 
+<a href="mailto:kuzma78@outlook.com?Subject=Hello"target="_top">kuzma78@outlook.com</a></br>
+Address: Kneza Danila 12, Beograd, Srbija</br>
+LinkedIn:<a href="https://rs.linkedin.com/in/igorkuzmanovic">link</a>&nbsp;&nbsp;&nbsp; Skype:<b>kuzmabg</b> 
+    </div>
+     </div> 
+    <div class="menu-item">
+      <h4><a href="#">Web Developing</a></h4>
+      <ul>
+        <li><a class="button" href="#popup1">Frontend</a><h5>HTML/HTML5 CSS/CSS3 JS ...</h5></li>
+        <li><a class="button" href="#popup1">Graphic Design</a><h5>Adobe CS Corel Painter MS Expression Web ...</h5></li>
+        <li><a class="button" href="#popup1">Backend</a><h5>PHP (flat) JQuerry SQL/MySQL Visual Studio ...</h5></li>
+      </ul>
+    </div>     
+    <div class="menu-item">
+      <h4><a href="#">System Administration</a></h4>
+      <ul>
+        <li><a class="button" href="#popup2">Hardware</a><h5>Computer & peripherals service and maintenance ...</h5></li>
+        <li><a class="button" href="#popup2">Networking</a><h5>Configuring, managing and maintaining networking equipment  ...</h5></li>
+        <li><a class="button" href="#popup2">Database administration</a><h5>Oracle, INOVA GIS Server ...</h5></li>
+      </ul>
+    </div>     
+    <div class="menu-item">
+      <h4><a href="#">Skills & Education</a></h4>
+      <ul>
+        <li><a class="button" href="#popup3">Education</a><h5>Certificates, Secondary, Tertiary ...</h5></li>
+        <li><a class="button" href="#popup4">Skills</a><h5>Tools and Craft ...</h5></li>
+        <li><a class="button" href="#popup5">Other</a><h5>Miscellaneous ...</h5></li>
+      </ul>
+    </div>
+      <h3>  Hello! My name is Igor Kuzmanovic, and I'm a Belgrade-based freelance developer. 
+I am working remotely on projects for clients all over the world. I have a diverse set of skills,
+ranging from design, to HTML + CSS + JS and PHP, all the way to system administration </h3>
+    <canvas id="c">
+<script>
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var chinese = "Игор0641577373Кузмановић";
+chinese = chinese.split("");
+var font_size = 20;
+var columns = c.width/font_size;
+var drops = [];
+for(var x = 0; x < columns; x++)
+    drops[x] = 1; 
+function draw()
+{
+    ctx.fillStyle = "rgba(161,206,234, 0.05)";
+    ctx.fillRect(0, 0, c.width, c.height);  
+    ctx.fillStyle = "white";
+    ctx.font = font_size + "px arial";
+
+    for(var i = 0; i < drops.length; i++)
+    {
+        var text = chinese[Math.floor(Math.random()*chinese.length)];
+        ctx.fillText(text, i*font_size, drops[i]*font_size);
+        if(drops[i]*font_size > c.height && Math.random() > 0.975)
+            drops[i] = 0;
+        drops[i]++;
+    }
+}
+setInterval(draw, 33);
+</script>
+ </canvas>
+    </nav>
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Professional Development</br> (Web Programming, Design and Media)</h2>
+		<a class="close" href="">×</a>
+		<div class="content">
+<b>Senior Front-end Developer ("Inspectron AG")</b></br>
+<a href="http://inspectron.ch/">LINK</a>
+<a href="https://www.tennis-challenge.ch/">LINK</a></br>
+Front-end Developement</br>
+Graphic Design </br>
+Support Team-Leader </br>
+<b>Web Developer („Sizmek“)</b></br>
+<a href="http://showcase.sizmek.com/">LINK</a></br>
+Developing standard and rich media flash ads</br>
+Developing standard and rich media HTML5 ads</br>
+Media encoding and modifying</br>
+<b>Ad Trafficker („AlphaDesignStudio“)</b></br>
+<a href="http://alphadesignstudio.biz/">LINK</a></br>
+Preparing, modifying and placement of advertisements and creative projects</br>
+Uploading campaigns to ad-server and target to the corresponding placement and ad slot</br>
+Implement Smartclip tagging</br>
+<b>Freelance Computer Programmer (entrepreneur)</b></br>
+<a href="http://tinkerbin.com/DDeWwqTr/">LINK</a></br>
+Software programming for a variety of clients.</br>
+Project management and editing of specialized content for advertising products published on platforms that include web, tablets, mobile and TV.</br>
+Web data administration, data entry, E-mail handling etc.
+		</div>
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup" draggable="true">
+		<h2>Professional Development</br> (Hardware and Administrative)</h2>
+		<a class="close" href="">×</a>
+		<div class="content">
+<b>Copier and printer Service & Repair Technician („BDC Ricoh“)</b></br>
+Repair, maintain, install and test copiers and printers/Repair or replace parts in copiers and printers
+/Disassemble and re-assemble copiers and printers/Inspect, refill, repair and clean products/Perform troubleshooting and other duties.
+/Install and configure software for copiers and printers</br>
+<b>Database administrator („Telekom Srbija“)</b></br>
+Preparing the documents and document scanning services/Process all daily updates and changes coming into the database, deliver on time, 
+follow high quality standards and meet the agreed service level agreements /Processing the data, verification and validation 
+/Web-Based document access /Document indexing and custom database design /Further refining the physical design to meet system storage requirement 
+/Installing and testing new versions of the database management system /Maintaining data standards, including adherence to the Data Protection Act 
+/Writing database documentation, procedures and definitions /Managing and testing back-up and recovery /Working closely with IT project managers, 
+database programmers and web developers /Installing new applications and customizing existing applications in order to make them fit for purpose.</br>
+<b>Retail Sales Associate („EXIT“; „I WILL PC“)</b></br>
+/Interacting with customers, giving them product presentations and convincing them to make purchases.
+/Strategizing to meet assigned sales targets in the given period of time.
+/Completing all the assigned tasks by the retail sales manager.
+/Keeping a track of the stock and inventory in the store and placing orders for replenishing the stock.
+/Maintaining the proper display of goods in the store and ensuring that they comply with the quality standards.
+/Evaluating market trends and keeping track of new products and prices in the market.
+/Attending sales meetings and training activities</br>
+<b>Administrative cashier and travel agent („Argus tours“; „Perla tours“ )</b></br>
+/Greets customers including answering phones and directing customer inquiries to appropriate party
+/Answers routine billing questions/issues from customers
+/Receives and processes all payments according to standard procedures.
+/Assists in the opening and closing of a retail location which includes and but not limited to cash handling and deposits
+/Informs customers about services available and assesses customer needs
+/Completes, processes, and maintains applicable paperwork and records</br>
+<b>Computer Service & Repair Technician – („LINKS”)</b></br>
+/Repairs and tests computers and other PC equipment/Repair parts that need to be replaced in laptops and computers
+/Disassemble and re-assemble computers and laptops/Inspect, repair and clean products
+/Perform troubleshooting and other duties/Installs and configures software
+		</div>
+	</div>
+</div>
+<div id="popup3" class="overlay">
+	<div class="popup">
+		<h2>Education</h2>
+		<a class="close" href="">×</a>
+		<div class="content">
+<b>Secondary Education</b></br>
+ High School Certificate, 1997, “Rade Končar”, Belgrade</br>
+<b>Tertiary Education</b></br>
+ Bachelor of Science in Computer Network Engineering, achieved with honours,</br>“Rochville University”, On-line, 2005.</br>
+<b>Certificate</b></br>
+ Web-developer PHP Engineering Certificate, 2011, “IT-Academy”, Belgrade
+		</div>
+	</div>
+</div>
+<div id="popup4" class="overlay">
+	<div class="popup">
+		<h2>Skills</h2>
+		<a class="close" href="">×</a>
+		<div class="content">
+<b>Software / Applications:</b></br>TCP/IP, HTML/HTML5, CSS/CSS3, JS, JQuerry, PHP, mySQL</br>
+<b>Tools:</b> Media Encoder, Audition, Dreamweaver, Notepad++, MS Expression Web, Visual Studio Code, Flash, Corel Painter, Adobe Photoshop, 3D Max</br>
+<b>Microsoft Office Package:</b> Word, Excel, Access, PowerPoint, Project, Outlook, IE</br>
+<b>Hardware Skills:</b></br>
+Computer assembling and maintenance/Installing and configuring the peripherals, components and drivers/Installing software and applications
+/Deep knowledge of printer and cartage refilling/Troubleshooting skills in software and hardware problems/
+On-line support to customers concerning their computer problems</br>
+<b>Networking Skills:</b></br>
+Managing and Maintaining the Servers, PC’s, Routers and Switches/Backup Management, Reporting and Recovery
+/Virus Protection and Eradication/Installing configuring administrating software applications
+/Providing training about Client OS & Hardware Devices/Working acquaintance in Linux environment
+		</div>
+	</div>
+</div>
+<div id="popup5" class="overlay">
+	<div class="popup">
+		<h2>Miscellaneous</h2>
+		<a class="close" href="">×</a>
+		<div class="content">
+- Intermediate-advanced level 5 (B1) English language</br>
+- Driving licence (category B)</br>
+- Analytical thinking, planning, accuracy and attention to details.</br>
+- Organization and prioritization skills.</br>
+- Problem analysis, use of judgment and ability to solve problems efficiently.</br>
+- Organizational skills and customer service orientation
+		</div>
+	</div>
