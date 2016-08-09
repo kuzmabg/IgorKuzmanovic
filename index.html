@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<title>HTML5</title>
+<title>Igor Kuzmanovic</title>
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet">
   <nav>
@@ -47,8 +47,8 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
-var chinese = "Игор0641577373Кузмановић";
-chinese = chinese.split("");
+var matrix = "Игор0641577373Кузмановић";
+matrix = matrix.split("");
 var font_size = 20;
 var columns = c.width/font_size;
 var drops = [];
@@ -63,7 +63,7 @@ function draw()
 
     for(var i = 0; i < drops.length; i++)
     {
-        var text = chinese[Math.floor(Math.random()*chinese.length)];
+        var text = matrix[Math.floor(Math.random()*matrix.length)];
         ctx.fillText(text, i*font_size, drops[i]*font_size);
         if(drops[i]*font_size > c.height && Math.random() > 0.975)
             drops[i] = 0;
